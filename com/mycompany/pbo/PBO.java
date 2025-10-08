@@ -1,0 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.pbo; 
+
+/**
+ *
+ * @author LENOVO
+ */
+public class PBO {
+
+    public static void main(String[] args) {
+        System.out.println("Apa Kabar....? ");
+        System.out.println("Selamat Belajar Java !");
+        System.out.print("Semoga Bermanfaat");
+    }
+}
