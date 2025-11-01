@@ -10,23 +10,24 @@ package abstrack;
  */
 public class Segitiga extends Bentuk2D {
 //    Member1 Variabel
-    private double alas,tinggi,sisiMiring;
+    private double Alas,Tinggi,sisiMiring;
 //   Member2 Konstruktor
-    public Segitiga(){
-
+    public Segitiga(double Alas, double Tinggi){
+        this.Alas = Alas;
+        this.Tinggi = Tinggi;
     }
 //   Member3 Method
     public double getAlas(){
-        return alas;
+        return Alas;
     }
     public void setAlas(double alas){
-        this.alas = alas;
+        this.Alas = alas;
     }
     public double getTinggi(){
-        return tinggi;
+        return Tinggi;
     }
     public void setTinggi(double tinggi){
-        this.tinggi = tinggi;
+        this.Tinggi = tinggi;
     }
     public double getSisiMiring(){
         return sisiMiring;
@@ -37,19 +38,19 @@ public class Segitiga extends Bentuk2D {
 
     @Override
     public double luasBidang(){
-        return 0.5f * this.alas * this.tinggi;
+        return 0.5f * this.Alas * this.Tinggi;
     }
     
     @Override
     public double kelilingBidang(){
-        this.sisiMiring = Math.sqrt(Math.pow(alas, 2) + 
-                Math.pow(tinggi, 2));
-        return this.alas + this.tinggi + this.sisiMiring;
+        this.sisiMiring = Math.sqrt(Math.pow(Alas, 2) + 
+                Math.pow(Tinggi, 2));
+        return this.Alas + this.Tinggi + this.sisiMiring;
     }
     
     @Override
     public String toString(){
-        return namaBentuk() + "alas = " + alas + 
-                ", tinggi = " + tinggi + ", sisi miring = " + sisiMiring;
+        return namaBentuk() + "alas = " + Alas + 
+                ", tinggi = " + Tinggi + ", sisi miring = " + sisiMiring;
     }
 }

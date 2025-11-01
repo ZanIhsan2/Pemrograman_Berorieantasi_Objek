@@ -17,9 +17,7 @@ public class KumpulanBentuk {
         // Ciptakan Objek
         Bentuk2D b1 = new Lingkaran(8);
         Bentuk2D b2 = new Lingkaran(5);
-        Bentuk2D b3 = new Segitiga();
-        // Set Nilai
-        b3.setAlas(6); b3.setTinggi(8);
+        Bentuk2D b3 = new Segitiga(6, 8);
         // Simpan dalam Array
         Bentuk2D ar_bentuk[] = {b1, b2, b3 };
         // Looping data
