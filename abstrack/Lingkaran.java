@@ -28,6 +28,6 @@ public class Lingkaran extends Bentuk2D {
     
     @Override
     public String toString(){
-        return namaBentuk() + "jari-jari" + this.jari2;
+        return namaBentuk() + " jari-jari " + this.jari2;
     }
 }

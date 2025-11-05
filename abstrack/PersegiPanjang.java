@@ -8,16 +8,45 @@ package abstrack;
  *
  * @author LENOVO
  */
-//public class PersegiPanjang extends Bentuk2D {
-////    Memberi Variabel
-//    private int panjang;
-//    private int lebar;
-//    
-//    public PersegiPanjang(int panjang) {
-//        this.panjang = panjang;
-//    }
-//    
-//    public PersegiPanjang(int lebar) {
-//        this.lebar = lebar;
-//    }
-//}
+public class PersegiPanjang extends Bentuk2D {
+//  Variabel
+    private double panjang,lebar;
+//  Konstruktor
+    public PersegiPanjang(double panjang, double lebar) {
+        this.panjang = panjang;
+        this.lebar = lebar;
+    }
+//  Method
+    public double getPanjang() {
+        return panjang;
+    }
+
+    public void setPanjang(double panjang) {
+        this.panjang = panjang;
+    }
+
+    public double getLebar() {
+        return lebar;
+    }
+
+    public void setLebar(double lebar) {
+        this.lebar = lebar;
+    }
+
+    @Override
+    public double luasBidang() {
+        return this.panjang * this.lebar;
+    }
+    
+    @Override
+    public double kelilingBidang(){
+        return 2 * (this.panjang + this.lebar);
+    }
+
+    @Override
+    public String toString() {
+        return namaBentuk() + " panjang = " + panjang + ", lebar = " + lebar;
+    }
+    
+    
+}

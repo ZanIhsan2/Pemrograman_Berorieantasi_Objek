@@ -50,7 +50,7 @@ public class Segitiga extends Bentuk2D {
     
     @Override
     public String toString(){
-        return namaBentuk() + "alas = " + Alas + 
+        return namaBentuk() + " alas = " + Alas + 
                 ", tinggi = " + Tinggi + ", sisi miring = " + sisiMiring;
     }
 }
